@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url("img/Background_image.svg");
+  background-color: #121826;
+  color: #E5E7EB;
+
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+main {
+  margin-block: 35px;
+  margin-inline: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.top__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: auto;
+  width: 350px;
+
+  span {
+    color: #D2D5DA;
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+article {
+  background-color: #212936;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px 0px #121826;
+  padding: 20px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  .emoji {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FCEED8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title__article {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  p {
+    font-weight: 400;
+    color: #D2D5DA;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (width>=1280px) {
+  section{
+    flex-direction: row;
+    gap: 3rem;
+  }
+}
